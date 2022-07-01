@@ -1,5 +1,5 @@
-# A Study on the Improvement of Review System Using AI
-### 인공지능을 활용한 리뷰 체계 개선에 관한 연구<br>
+# A Study on the Improvement of Delivery App Review System Using Emotional Analysis Techniques
+### 감정 분석 기법을 활용한 배달 앱 리뷰 시스템 개선에 관한 연구<br>
 
 ## Introduce
 * 프로젝트 진행기간: 2022. 04. 09. ~ 2022. 07. 08.(예정)
