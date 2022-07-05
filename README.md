@@ -32,7 +32,7 @@
 처음에는 직접 모델을 구축하고 데이터를 학습시키는 방법을 고려했지만 학문적, 시간적 한계가 있었다. 모델에 학습시킬 학습 데이터들을 구하는 것 또한 난관이었으며 다른 방안을 찾아보기로 했다.
 
 #### 구현방법2. 구축된 모델 사용하기
-[kakaobrain](https://github.com/kakaobrain)에서 제작한 [PORORO](https://github.com/kakaobrain/pororo) 라이브러리를 사용하기로 했다. 1.1k의 Star을 받은 만큼 충분히 검증되었다고 생각했다. 직접 학습을 시킬 필요가 없다는 것 또한 장점이다.<br>
+[kakaobrain](https://github.com/kakaobrain)에서 개발한 [PORORO](https://github.com/kakaobrain/pororo) 라이브러리를 사용하기로 했다. 1.1k의 Star을 받은 만큼 충분히 검증되었다고 생각했다. 직접 학습을 시킬 필요가 없다는 것 또한 장점이다.<br>
 
 [coding.ipynb](https://github.com/yuedward0103/DeliveryReview/blob/main/coding.ipynb)와 같이 간단한 코드를 작성하고 이를 서비스에 적용해보고자 했다.<br>
 
@@ -42,12 +42,14 @@
 나는 별점을 표시하는 란을 '매우 긍정적', '대체로 긍정적', '보통', '대체로 부정적', '매우 부정적' 5단계 척도로 나누어 표기하고자 했다.<br>
 
 ### Issue 1. 반의적 표현의 인지 불가
-![image](https://user-images.githubusercontent.com/27762073/177233676-92bde58f-c4b2-460f-8820-51eebbe90df3.png)
+![image](https://user-images.githubusercontent.com/27762073/177233676-92bde58f-c4b2-460f-8820-51eebbe90df3.png)<br>
 위 그림에서 제시된 3개의 리뷰는 모두 겉으로는 긍정적인 것처럼 보이지만, 속뜻은 부정적인 내용을 담고 있는 반의적 문장이다. 하지만 모두 이를 긍정적인 문장으로 해석하는 문제가 있다. 언어의 특성 상 그 표현 방법이 다양하다보니 생기는 문제로 보인다.<br>
 
 ### Issue 2. 드립의 민족
-![image](https://user-images.githubusercontent.com/27762073/177233812-6fe300b2-0ad6-42b5-b449-26a1da478bc8.png)
+![image](https://user-images.githubusercontent.com/27762073/177233812-6fe300b2-0ad6-42b5-b449-26a1da478bc8.png)<br>
 출처 : 온라인 커뮤니티 캡쳐<br><br>
 ![image](https://user-images.githubusercontent.com/27762073/177233846-1e6c91fb-34d0-4a12-90a6-6441678c5e65.png)
 '드립의 민족'답게 '매우 맛있다'는 뜻으로 쓰인 이 리뷰가 부정적인 리뷰라고 해석하는 문제가 발생했다. 닉네임을 반영하지 않는 시스템의 한계로 보이는데 이를 개선할 근본적인 해결책이 필요해 보인다.<br><br>
-리뷰의 감정 분석이 '별점'에서 생기는 문제 원인을 완전히 없앨 수 있는 해결 방안인 것은 분명해 보이며, 연구의 의의라 할 수 있다. 하지만 이 연구 결과를 실제 서비스에 적용하게 된다면 어플 관리자 등 인간의 개입이 상당히 필요해 보인다. 또한 Issue에서 제기했듯이 반의적 표현 등을 완전히 인지할 수 없다는 것도 한계이다.<br>
+
+### 결론
+리뷰의 감정 분석이 '별점'에서 생기는 문제 원인을 완전히 없앨 수 있는 해결 방안인 것은 분명해 보이며, 연구의 의의라 할 수 있다. 하지만 Issue에서 제기했듯이 반의적 표현 등을 완전히 인지할 수 없다는 것은 분명한 한계이며, 이 연구 결과를 실제 서비스에 적용하게 된다면 어플 관리자 등 인간의 개입이 상당히 필요해 보인다.
