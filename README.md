@@ -32,9 +32,9 @@
 처음에는 직접 모델을 구축하고 데이터를 학습시키는 방법을 고려했지만 학문적, 시간적 한계가 있었다. 모델에 학습시킬 학습 데이터들을 구하는 것 또한 난관이었으며 다른 방안을 찾아보기로 했다.
 
 #### 구현방법2. 구축된 모델 사용하기
-[kakaobrain](https://github.com/kakaobrain)에서 제작한 [PORORO](https://github.com/kakaobrain/pororo) 라이브러리를 사용하기로 했다. 1.1k의 Star을 받은 만큼 충분히 검증되었다고 생각했다. 직접 학습을 시킬 필요가 없다는 것 또한 장점이다.<br><br>
+[kakaobrain](https://github.com/kakaobrain)에서 제작한 [PORORO](https://github.com/kakaobrain/pororo) 라이브러리를 사용하기로 했다. 1.1k의 Star을 받은 만큼 충분히 검증되었다고 생각했다. 직접 학습을 시킬 필요가 없다는 것 또한 장점이다.<br>
 
-[coding.ipynb](https://github.com/yuedward0103/DeliveryReview/coding.ipynb)와 같이 간단한 코드를 작성하고 이를 서비스에 적용해보고자 했다.<br>
+[coding.ipynb](https://github.com/yuedward0103/DeliveryReview/blob/main/coding.ipynb)와 같이 간단한 코드를 작성하고 이를 서비스에 적용해보고자 했다.<br>
 
 ## 연구 결과
 앱에 결과를 표시하는 방법으로는 여러 가지가 있다.<br>
